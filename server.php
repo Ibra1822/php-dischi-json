@@ -7,7 +7,7 @@ echo json_encode($dischi);
 
 $random = rand(1990, 2022);
 
-if (isset($_POST['title'])) {
+if (!empty($_POST)) {
 
 $newDisc = [
   'title' => $_POST['title'],
