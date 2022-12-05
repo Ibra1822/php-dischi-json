@@ -27,7 +27,7 @@ header img {
   cursor: pointer;
 }
 
-button,input{
+button,input,select{
   padding: 10px 15px;
   border: 1px solid transparent;
 }
@@ -36,6 +36,7 @@ button{
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
+  cursor: pointer;
 }
 input{
   margin-left: 10px;

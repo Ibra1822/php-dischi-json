@@ -22,6 +22,14 @@
 
    <div class="cont-inputs">
 
+   <select v-model="gener" name="" id="">
+   <option value="" selected>Seleziona Genere</option>
+    <option value="Rock">Rock</option>
+    <option value="Pop">Pop</option>
+    <option value="Metal">Metal</option>
+   </select>
+
+   <input v-model="author" type="text" placeholder="Author">
    <input v-model="title" type="text" placeholder="Title">
    <button @click="addNew()" >Aggiungi</button>
    </div>

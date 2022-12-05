@@ -11,10 +11,10 @@ if (isset($_POST['title'])) {
 
 $newDisc = [
   'title' => $_POST['title'],
-  'author' => 'Bon Jovi',
+  'author' => $_POST['author'],
   'year' =>  $random,
-  'poster' => 'https://zerojackerzz.com/wp-content/uploads/2019/10/album-placeholder.png',
-  'genre' => 'Rock'
+  'poster' => $_POST['img'],
+  'genre' => $_POST['gener']
 ];
 
 $dischi[] = $newDisc;
