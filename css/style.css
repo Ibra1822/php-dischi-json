@@ -15,12 +15,30 @@ header {
   width: 100%;
   background-color: #06131f;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 header img {
   height: 100%;
   margin-left: 100px;
   cursor: pointer;
+}
+
+button,input{
+  padding: 10px 15px;
+  border: 1px solid transparent;
+}
+
+button{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+input{
+  margin-left: 10px;
 }
 
 .cont-card {
@@ -44,7 +62,6 @@ header img {
 .pic-card {
   width: 100%;
   height: 70%;
-  border: 1px solid black;
 }
 
 .pic-card img {

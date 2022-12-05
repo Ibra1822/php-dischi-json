@@ -16,15 +16,25 @@
 </head>
 <body>
 <div id="app">
+  
   <header>
-    <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" alt="" srcset="">
+   <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" alt="" srcset="">
+
+   <div class="cont-inputs">
+
+   <input v-model="title" type="text" placeholder="Title">
+   <button @click="addNew()" >Aggiungi</button>
+   </div>
+
   </header>
 
 <div class="cont-card">
 
-<div v-for="(item , index) in arrayDischi" class="card">
+<div 
+v-for="(item , index) in arrayDischi"
+ class="card">
    <div class="pic-card">
-    <img :src="item.poster" alt="">
+    <img :src="item.poster" :alt="item.title">
    </div>
   <div class="cont-text">
    <div class="title">
@@ -38,7 +48,6 @@
    </div>
   </div>
 </div>
-
 
 </div>
 

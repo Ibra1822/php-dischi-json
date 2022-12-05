@@ -5,6 +5,7 @@ createApp({
     return {
       arrayDischi: [],
       finalApi: "server.php",
+      title :'',
     };
   },
   methods: {
@@ -13,6 +14,18 @@ createApp({
         this.arrayDischi = result.data;
       });
     },
+   addNew(){
+    const data ={
+      title : this.title,
+      
+    };
+    axios.post(this.finalApi,data, {
+      headers :{'Content-Type' : 'multipart/form-data'}
+    })
+    .then(result =>{
+      this.arrayDischi = result.data;
+    })
+  }
   },
   mounted() {
     this.getApi();
